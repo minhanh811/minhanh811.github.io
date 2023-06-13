@@ -6,14 +6,14 @@ highlighter:         rouge
 permalink:        /post/:title
 
 # Setup
-title:            "Tyler Benziger"
-description:      "Tyler Benziger writes about things"
-url:              http://tybenz.github.io
+title:            "Minh Anh"
+description:      "don't be sad"
+url:              http://minhanh811.github.io
 baseurl:          "/"
 
 author:
-  name:           "Tyler Benziger"
+  name:           "Minh Anh"
 
 # Custom vars
-twitter:        https://twitter.com/tybenz
-github:         https://github.com/tybenz
+# twitter:        https://twitter.com/tybenz
+github:         https://github.com/minhanh811
