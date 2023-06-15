@@ -10,10 +10,8 @@ A couple of years ago, I found myself consumed by a burning question: How does o
 
 One day I discovered [roadmap.sh](https://roadmap.sh) This is exactly what I want: a comprehensive and well-structured roadmap for everyone. Roadmap.sh offers comprehensive and organized learning paths that cover everything from web development and data science to DevOps and mobile app development. I have just completed the Backend Developer at **Roadmap**. I hope that the next time somebody comes to me seeking advice on how to become a software engineer, I will be armed with the knowledge and resources to guide them effectively.
 
-<figure>
 <img src="../backend-roadmap.png" alt="Backend Roadmap Image."/>
 <center>Backend Developer Roadmap.</center>
-</figure>
 
 <p>
 don't be sad
