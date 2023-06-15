@@ -12,7 +12,7 @@ One day I discovered [roadmap.sh](https://roadmap.sh) This is exactly what I wan
 
 <figure>
 <img src="../backend-roadmap.png" alt="Backend Roadmap Image."/>
-<figure-caption>Backend Developer Roadmap.</figure-caption>
+<center>Backend Developer Roadmap.</center>
 </figure>
 
 <p>
