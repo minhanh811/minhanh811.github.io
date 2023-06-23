@@ -29,7 +29,7 @@ Repeat this process for each table or set of records you want to remove.
 # Step 3: Prepare for Data Restoration:
 
 Create a backup plan to ensure you have a secure copy of your archived CSV files. Consider off-site storage or redundant backups to mitigate the risk of data loss.
-Document the steps required to restore data from the CSV files back into the database. This may involve creating temporary tables, importing the data using COPY FROM, and transforming the CSV data as necessary.
+Document the steps required to restore data from the CSV files back into the database. This may involve creating temporary tables, importing the data using `COPY FROM`, and transforming the CSV data as necessary.
 Test the restoration process in a non-production environment to verify its effectiveness and to become familiar with the steps involved.
 
 # Conclusion:
