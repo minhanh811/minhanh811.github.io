@@ -17,7 +17,7 @@ Redis requires TLS to connect.
 
 ## Solution
 
-Use OpenSSL::SSL::VERIFY_NONE for Redis client.
+Use OpenSSL::SSL::VERIFY_NONE for Redis client to tell the client it's OK to work with a self-signed certificate, no attempt will be made to verify that the cert was signed by a known Certificate Authority.
 
 ```ruby
 # config/initializers/sidekiq.rb
