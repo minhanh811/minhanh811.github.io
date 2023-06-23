@@ -33,3 +33,4 @@ end
 ```
 Redis.new(url: 'url', driver: :ruby, ssl_params: { verify_mode: OpenSSL::SSL::VERIFY_NONE })
 ```
+Another article related to this topic: [How to enable SSL with Redis (Ruby Driver) on RedisLabs.]([http://tybenz.github.io](https://gist.github.com/mrrooijen/6e3d8b16d90de943858ce4677f9ac86f)https://gist.github.com/mrrooijen/6e3d8b16d90de943858ce4677f9ac86f)
