@@ -1,6 +1,12 @@
+---
+layout: post
+title: "Enable TSL For Redis"
+nav: blog
+---
+
 ## Problem
 
-My Ruby on Rails app get this error
+My Ruby on Rails app gets this error
 ```
 OpenSSL::SSL::SSLError: SSL_connect returned=1 errno=0 state=error: certificate verify failed
 ```
