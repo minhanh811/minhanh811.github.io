@@ -3,7 +3,7 @@ layout: post
 nav: blog
 title: Write psql command in Bash script
 ---
-As I shared before in ...  Archiving a database is beneficial for almost every system but Archiving is a critical task to maintain the performance and efficiency of a database by moving older or less frequently accessed data to separate storage. By leveraging psql commands within the Bash script, we were able to automate the archiving process, ensuring the integrity and consistency of the data while minimizing manual effort.
+As I shared before in [Archiving a Database.]([https://minhanh811.github.io/post/archiving-a-database])  Archiving a database is beneficial for almost every system but Archiving is a critical task to maintain the performance and efficiency of a database by moving older or less frequently accessed data to separate storage. By leveraging psql commands within the Bash script, we were able to automate the archiving process, ensuring the integrity and consistency of the data while minimizing manual effort.
 So I tried to learn about writing psql command in Bash script.
 
 # Step 1: I wannt to backup my database by using batches select query based on month and year. So I create a simple way to input month/year/batch size
@@ -37,7 +37,7 @@ fi
 echo ""Input batch size:""
 read batch_size
 ```
-<br />
+
 # Step 2: Set the database connection parametters. Note: the PGPASSWORD allow you execute the psql command without asking password. I love it.
 ```
 DB_NAME="your_database"
@@ -45,7 +45,7 @@ USER="your_username"
 HOST="your_host"
 PGPASSWORD="your_password"
 ```
-<br />
+
 # Step 3: Copy my datab to CSV file and add all the query I executed to log file.
 ```
 ###### Backup ######
@@ -84,6 +84,6 @@ for ((month=from_month; month<=to_month; month++)); do
     sleep 0.5
 done
 ```
-<br />
+
 # Conclusion:
 The script incorporated the necessary psql commands to select and export the booking records that met our archiving criteria into a CSV file. The flexibility of Bash scripting allowed us to parameterize the script, enabling customization of the archiving conditions such as date range or specific attributes. We also utilized the power of psql commands to efficiently delete the archived records from the live database, freeing up valuable storage space and optimizing query performance.
