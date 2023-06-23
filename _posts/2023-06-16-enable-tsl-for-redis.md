@@ -2,7 +2,7 @@
 
 My Ruby on Rails app get this error
 ```
-OpenSSL::SSL::SSLError: SSL_connect returned=1 errno=0 state=error: certificate verify failed (certificate rejected)
+OpenSSL::SSL::SSLError: SSL_connect returned=1 errno=0 state=error: certificate verify failed
 ```
 
 ## Reason
