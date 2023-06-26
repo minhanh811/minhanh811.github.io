@@ -3,9 +3,12 @@ layout: post
 nav: blog
 title: Get all foreign key constraints
 ---
-When attempting to archive a PostgreSQL database, I encountered an issue while trying to delete data from the orders table. The deletion process failed due to a foreign key constraint. This constraint ensures data integrity by preventing the deletion of a record that is referenced by another table. In this case, it indicates that related records in another table depend on the data present in the orders table.
+When attempting to archive a PostgreSQL database, I encountered an issue while trying to delete data from the orders table.
+
 So I have to Identify all the foreign key constraints of the orders table before taking any action such as removing foreign key constraints or deleting records from related tables.
-Here's the query to get all foreign key constraints of the orders table
+
+Here's the query to get all foreign key constraints of the orders table:
+
 ```
 SELECT (select  r.relname from pg_class r where r.oid = c.confrelid) as base_table,
        a.attname as base_col,
@@ -16,6 +19,8 @@ SELECT (select  r.relname from pg_class r where r.oid = c.confrelid) as base_tab
  WHERE c.confrelid = (select oid from pg_class where relname = 'orders')
    AND c.confrelid!=c.conrelid;
 ```
+
 &nbsp;
 Execute the query, and it will return a result set containing the foreign key constraint name, the table containing the constraint, the column name in the order table, the referenced table, and the referenced column.
+
 By analyzing the output of this query, I had a clear understanding of the foreign key constraints associated with the orders table and can proceed with appropriate actions.
