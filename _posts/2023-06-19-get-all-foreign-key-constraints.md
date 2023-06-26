@@ -5,7 +5,7 @@ title: Get all foreign key constraints
 ---
 When attempting to archive a PostgreSQL database, I encountered an issue while trying to delete data from the orders table.
 
-So I have to Identify all the foreign key constraints of the orders table before taking any action such as removing foreign key constraints or deleting records from related tables.
+So I have to identify all the foreign key constraints of the orders table before taking any action such as removing foreign key constraints or deleting records from related tables.
 
 Here's the query to get all foreign key constraints of the orders table:
 
@@ -20,7 +20,6 @@ SELECT (select  r.relname from pg_class r where r.oid = c.confrelid) as base_tab
    AND c.confrelid!=c.conrelid;
 ```
 
-&nbsp;
 Execute the query, and it will return a result set containing the foreign key constraint name, the table containing the constraint, the column name in the order table, the referenced table, and the referenced column.
 
 By analyzing the output of this query, I had a clear understanding of the foreign key constraints associated with the orders table and can proceed with appropriate actions.
