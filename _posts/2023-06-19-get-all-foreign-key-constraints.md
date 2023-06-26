@@ -1,7 +1,7 @@
 ---
 layout: post
 nav: blog
-title: Get all foreign key constraints
+title: Get foreign key constraints
 ---
 When attempting to archive a PostgreSQL database, I encountered an issue while trying to delete data from the orders table.
 
