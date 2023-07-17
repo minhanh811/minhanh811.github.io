@@ -5,5 +5,5 @@ title: Paris by night
 ---
 
 <p>
-  don't be sad
+  All the tickets are sold out :(
 </p>
