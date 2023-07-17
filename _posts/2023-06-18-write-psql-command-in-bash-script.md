@@ -3,7 +3,7 @@ layout: post
 nav: blog
 title: PostgreSQL in Bash script
 ---
-As I shared before in [Archiving a Database.]([https://minhanh811.github.io/post/archiving-a-database])  Archiving a database is beneficial for almost every system but Archiving is a critical task to maintain the performance and efficiency of a database by moving older or less frequently accessed data to separate storage. By leveraging psql commands within the Bash script, we were able to automate the archiving process, ensuring the integrity and consistency of the data while minimizing manual effort.
+As I shared before in [Archiving a Database.](https://minhanh811.github.io/post/archiving-a-database)  Archiving a database is beneficial for almost every system but Archiving is a critical task to maintain the performance and efficiency of a database by moving older or less frequently accessed data to separate storage. By leveraging psql commands within the Bash script, we were able to automate the archiving process, ensuring the integrity and consistency of the data while minimizing manual effort.
 So I tried to learn about writing psql command in Bash script.
 &nbsp;
 # Step 1: I wannt to backup my database by using batches select query based on month and year. So I create a simple way to input month/year/batch size
